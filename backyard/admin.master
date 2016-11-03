@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" %>
+
+<!DOCTYPE html>
+
+<script runat="server">
+
+</script>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+       <!-- 最新編譯和最佳化的 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+    <!-- 選擇性佈景主題 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css"/>
+    <!-- 最新編譯和最佳化的 JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <title></title>
+    
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    
+
+        
+        
+        <!-- Split button -->
+        <ul class="nav nav-tabs">
+            <li role="presentation"><a href="Publishers.aspx">商品管理</a></li>
+            <li role="presentation"><a href="Default.aspx">庫存管理</a></li>
+            <li role="presentation"><a href="Default3.aspx">帳戶管理</a></li>
+            <li role="presentation"><a href="Order.aspx">訂單查詢</a></li>
+            <li role="presentation"><a href="Orderlist.aspx">訂單明細</a></li>
+            <li role="presentation"><a href="../Default.aspx">回前台</a></li>
+        </ul>
+    
+        <div>
+        <asp:ContentPlaceHolder id="Main" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
